@@ -1,0 +1,14 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /spring-demo
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+#      username:
+#      password:
+      database: rspringdemo
+      reactive-repositories:
+        enabled: true
