@@ -1,4 +1,4 @@
-package com.demo.springfive.demo.domain;
+package com.demo.springfive.demo.human.domain;
 
 /**
  * Created by xiwang on 10/3/17.

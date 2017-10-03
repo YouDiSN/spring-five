@@ -1,6 +1,6 @@
-package com.demo.springfive.demo.repository;
+package com.demo.springfive.demo.human.repository;
 
-import com.demo.springfive.demo.domain.Human;
+import com.demo.springfive.demo.human.domain.Human;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 

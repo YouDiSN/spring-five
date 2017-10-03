@@ -1,8 +1,7 @@
-package com.demo.springfive.demo.service.impl;
+package com.demo.springfive.demo.human.service;
 
-import com.demo.springfive.demo.domain.Human;
-import com.demo.springfive.demo.repository.HumanRepository;
-import com.demo.springfive.demo.service.IHumanService;
+import com.demo.springfive.demo.human.domain.Human;
+import com.demo.springfive.demo.human.repository.HumanRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;

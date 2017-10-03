@@ -1,4 +1,4 @@
-package com.demo.springfive.demo.domain;
+package com.demo.springfive.demo.human.domain;
 
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;

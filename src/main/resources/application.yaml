@@ -9,6 +9,6 @@ spring:
       port: 27017
 #      username:
 #      password:
-      database: rspringdemo
+      database: springdemo
       reactive-repositories:
         enabled: true

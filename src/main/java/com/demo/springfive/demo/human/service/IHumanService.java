@@ -1,6 +1,6 @@
-package com.demo.springfive.demo.service;
+package com.demo.springfive.demo.human.service;
 
-import com.demo.springfive.demo.domain.Human;
+import com.demo.springfive.demo.human.domain.Human;
 import reactor.core.publisher.Mono;
 
 import java.util.Optional;
