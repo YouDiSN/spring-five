@@ -25,8 +25,6 @@ public class HumanServiceImpl implements IHumanService {
     @Override
     public Mono<Optional<Human>> getHumanById(String id) {
         return humanRepository.findById(id)
-                .map(Optional::ofNullable)
-                .log("get human by id, id = " + id)
-                .doOnError(Throwable::printStackTrace);
+                .map(Optional::ofNullable);
     }
 }
