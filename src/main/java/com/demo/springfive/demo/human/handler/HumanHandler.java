@@ -2,8 +2,6 @@ package com.demo.springfive.demo.human.handler;
 
 import com.demo.springfive.demo.human.domain.Human;
 import com.demo.springfive.demo.human.service.IHumanService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -20,8 +18,6 @@ import java.util.Optional;
 @Controller
 public class HumanHandler {
 
-    private Logger logger = LoggerFactory.getLogger(this.getClass());
-
     private final IHumanService humanService;
 
     @Autowired
@@ -33,8 +29,7 @@ public class HumanHandler {
         String humanId = request.pathVariable("id");
         Mono<Human> humanMono = humanService.getHumanById(humanId)
                 .filter(Optional::isPresent)
-                .map(Optional::get)
-                .doFinally(human -> logger.debug(humanId, human));
+                .map(Optional::get);
         return ServerResponse.ok()
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .body(humanMono, Human.class);
