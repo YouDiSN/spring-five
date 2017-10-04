@@ -40,7 +40,6 @@ public class LoggingReactiveFilter implements ReactiveFilter {
         String statusCode = serverResponse.statusCode().toString();
         Map body = holder.body;
         logger.debug("{}|{}|{}|{}|{}|{}|{}", statusCode, path, method, body, start, end, types);
-
     }
 
     private static class LogInfoHolder {
