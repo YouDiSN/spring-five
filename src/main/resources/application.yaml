@@ -12,3 +12,7 @@ spring:
       database: springdemo
       reactive-repositories:
         enabled: true
+  profiles:
+    active: dev,local
+logging:
+  level: debug
