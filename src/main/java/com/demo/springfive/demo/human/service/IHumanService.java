@@ -6,11 +6,19 @@ import reactor.core.publisher.Mono;
 import java.util.Optional;
 
 /**
- * Created by xiwang on 10/1/17.
+ *
+ * @author xiwang
+ * @date 10/1/17
  * IHumanService
  */
 public interface IHumanService {
 
+    /**
+     * get human
+     *
+     * @param id human id
+     * @return Mono Optional Human
+     */
     Mono<Optional<Human>> getHumanById(String id);
 
 }

@@ -9,7 +9,9 @@ import org.springframework.data.mongodb.core.mapping.Field;
 import java.util.Date;
 
 /**
- * Created by xiwang on 10/1/17.
+ *
+ * @author xiwang
+ * @date 10/1/17
  * Human
  */
 @Document(collection = "Human")
